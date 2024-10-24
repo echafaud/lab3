@@ -11,3 +11,6 @@ ansible-app-2
 [webapp:children]
 database
 application
+
+[my]
+ansible-app-4

@@ -3,7 +3,9 @@ http {
     {% for app in groups['application'] %}
       server {{ app }}:5000;
     {% endfor %}
-
+    {% for app in groups['my'] %}
+      server {{ app }}:5000;
+    {% endfor %}    
   }
 
   server {
